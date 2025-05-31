@@ -1,0 +1,349 @@
+/* Hero.css */
+.hero-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    font-family: 'Merriweather', serif;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: #2d3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.hero-divider {
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #5a6a7a;
+    margin-bottom: 1.5rem;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.primary-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+    background-color: #2980b9;
+}
+
+.secondary-button {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-divider {
+        margin: 0 auto 1.5rem;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-image {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* Features.css */
+.features-section {
+    font-family: 'Merriweather', serif;
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Feature Card (Physical Activity first section) */
+.feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.feature-header {
+    background-color: #3498db;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.feature-content {
+    padding: 2rem;
+}
+
+/* Feature Rows (Lifestyle and Physical Activity sections) */
+.feature-row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.feature-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.feature-text-container {
+    flex: 1;
+}
+
+/* Text Styles */
+.feature-title {
+    font-size: 1.8rem;
+    color: #2d3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.feature-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #5a6a7a;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #2d3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-divider {
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 0 auto 2rem;
+}
+
+/* Button Styles */
+.feature-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feature-button:hover {
+    background-color: #2980b9;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    padding: 2rem 0;
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.newsletter-content {
+    flex: 3;
+}
+
+.newsletter-image-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-title {
+    font-size: 1.5rem;
+    color: #2d3e50;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #5a6a7a;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.newsletter-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .feature-row,
+    .feature-row.reverse,
+    .newsletter-container {
+        flex-direction: column;
+    }
+
+    .feature-image-container {
+        margin-bottom: 2rem;
+    }
+
+    .newsletter-image-container {
+        margin-top: 2rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-input {
+        border-radius: 4px;
+        margin-bottom: 1rem;
+    }
+
+    .newsletter-button {
+        border-radius: 4px;
+        width: 100%;
+    }
+}
